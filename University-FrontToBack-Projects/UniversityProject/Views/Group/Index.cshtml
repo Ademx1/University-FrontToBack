@@ -1,0 +1,14 @@
+﻿@model List<Group>
+@{
+    ViewData["title"] = "group";
+}
+
+
+<h1>Groups:</h1>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>Group:@item.Name</li>
+    }
+</ul>
